@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - MEDCore</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Área de conteúdo -->
+  <div class="area"></div>
+  <nav class="main-menu">
+    <ul>
+      <li>
+        <a href="medboard.html">
+          <i class="fa fa-tasks fa-2x"></i>
+          <span class="nav-text">MEDBoard</span>
+        </a>
+      </li>
+      <li>
+        <a href="medflow.html">
+          <i class="fa fa-cogs fa-2x"></i>
+          <span class="nav-text">MEDFlow</span>
+        </a>
+      </li>
+      <li>
+        <a href="medservice.html">
+          <i class="fa fa-tools fa-2x"></i>
+          <span class="nav-text">MEDService</span>
+        </a>
+      </li>
+      <li>
+        <a href="medpulse.html">
+          <i class="fa fa-heartbeat fa-2x"></i>
+          <span class="nav-text">MEDPulse</span>
+        </a>
+      </li>
+      <li>
+        <a href="medcontrol.html">
+          <i class="fa fa-chart-line fa-2x"></i>
+          <span class="nav-text">MEDControl</span>
+        </a>
+      </li>
+      <li>
+        <a href="medlearn.html">
+          <i class="fa fa-book-open fa-2x"></i>
+          <span class="nav-text">MEDLearn</span>
+        </a>
+      </li>
+    </ul>
+    <div id="user-info" class="user-info">
+      <!-- O nome e papel do usuário serão exibidos aqui -->
+    </div>
+    <ul class="logout">
+      <li>
+        <a href="index.html">
+          <i class="fa fa-power-off fa-2x"></i>
+          <span class="nav-text">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="dashboard-header">
+
+  </header>
+
+  <main class="dashboard-content">
+    <section>
+      <h1>Bem-vindo ao MEDCore!</h1>
+      <h2>Escolha um módulo na barra lateral</h2>
+      <p>Explore os recursos do MEDCore para gerenciar tarefas, automação, suporte e muito mais.</p>
+    </section>
+  </main>
+
+  <script>
+    // Captura os parâmetros da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username'); // Nome do usuário
+    const role = urlParams.get('role'); // Papel do usuário
+
+    // Atualiza o elemento no header
+    const userInfo = document.getElementById('user-info');
+    if (username && role) {
+      userInfo.textContent = `${username} (${role})`;
+    } else {
+      userInfo.textContent = "Visitante"; // Fallback para visitantes
+    }
+  </script>
+</body>
+</html>

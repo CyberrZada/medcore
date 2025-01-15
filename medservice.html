@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDCore - MEDService</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/medservice.css">
+</head>
+<body>
+  <div class="program-container">
+    <header>
+      <h1>MEDService</h1>
+      <nav>
+        <a href="dashboard.html" class="btn-back">Voltar ao Dashboard</a>
+      </nav>
+    </header>
+    <main>
+      <section class="support-form">
+        <h2>Envio de Solicitações</h2>
+        <form>
+          <label for="title">Título da Solicitação:</label>
+          <input type="text" id="title" placeholder="Digite o título" required>
+          
+          <label for="priority">Prioridade:</label>
+          <select id="priority">
+            <option>Baixa</option>
+            <option>Média</option>
+            <option>Alta</option>
+          </select>
+          
+          <label for="description">Descrição:</label>
+          <textarea id="description" rows="4" placeholder="Descreva a solicitação" required></textarea>
+          
+          <label for="attachment">Anexar Arquivo:</label>
+          <input type="file" id="attachment">
+          
+          <button type="submit">Enviar Solicitação</button>
+        </form>
+      </section>
+      
+      <style>
+        .support-form form {
+          max-width: 600px;
+          margin: 20px auto;
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+  .btn-back {
+    background-color: #FF4136;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+        form input, form textarea, form select, form button {
+          width: 100%;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        form button {
+          background-color: #28a745;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        form button:hover {
+          background-color: #218838;
+        }
+      </style>
+      
+      <section class="requests">
+        <h2>Solicitações Enviadas</h2>
+        <ul>
+          <li><strong>Manutenção de Equipamento</strong> - Prioridade: Alta</li>
+          <li><strong>Atualização de Software</strong> - Prioridade: Média</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

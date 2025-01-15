@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDCore - MEDControl</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/medcontrol.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>MEDControl</h1>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#overview" class="active">Visão Geral</a></li>
+          <li><a href="#tasks">Tarefas</a></li>
+          <li><a href="#analytics">Relatórios</a></li>
+          <li><a href="#settings">Configurações</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h2>Gestão Centralizada</h2>
+        <a href="dashboard.html" class="logout-button">Voltar ao Dashboard</a>
+      </header>
+
+      <!-- Overview Section -->
+      <section id="overview" class="content-section">
+        <h3>Resumo Geral</h3>
+        <div class="cards">
+          <div class="card">
+            <h4>Processos Ativos</h4>
+            <p>15</p>
+          </div>
+          <div class="card">
+            <h4>Equipes Envolvidas</h4>
+            <p>8</p>
+          </div>
+          <div class="card">
+            <h4>Eficiência</h4>
+            <p>95%</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tasks Section -->
+      <section id="tasks" class="content-section">
+        <h3>Tarefas</h3>
+        <table class="tasks-table">
+          <thead>
+            <tr>
+              <th>Tarefa</th>
+              <th>Responsável</th>
+              <th>Status</th>
+              <th>Prazo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Revisar Fluxos</td>
+              <td>João Silva</td>
+              <td><span class="status ongoing">Em Andamento</span></td>
+              <td>20/01/2025</td>
+            </tr>
+            <tr>
+              <td>Atualizar Relatórios</td>
+              <td>Maria Souza</td>
+              <td><span class="status complete">Concluído</span></td>
+              <td>15/01/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Analytics Section -->
+      <section id="analytics" class="content-section">
+        <h3>Relatórios</h3>
+        <div class="chart">
+          <img src="img/sample-chart.png" alt="Gráfico de Relatórios">
+        </div>
+      </section>
+
+      <!-- Settings Section -->
+      <section id="settings" class="content-section">
+        <h3>Configurações</h3>
+        <form>
+          <label for="update-frequency">Frequência de Atualização:</label>
+          <select id="update-frequency">
+            <option value="daily">Diária</option>
+            <option value="weekly">Semanal</option>
+            <option value="monthly">Mensal</option>
+          </select>
+          <button type="submit" class="save-button">Salvar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

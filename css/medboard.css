@@ -1,0 +1,27 @@
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.kanban-column {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+.kanban-card {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back {
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
