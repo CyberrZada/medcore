@@ -9,8 +9,16 @@
 </head>
 <body>
   <div class="dashboard-container">
+    <!-- Botão do menu hambúrguer -->
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
+      <button class="close-menu" id="close-menu">&times;</button>
       <div class="logo">
         <h1>MEDControl</h1>
       </div>
@@ -30,6 +38,10 @@
         <h2>Gestão Centralizada</h2>
         <a href="dashboard.html" class="logout-button">Voltar ao Dashboard</a>
       </header>
+
+    <!-- Seções continuam iguais -->
+  </main>
+</div>
 
       <!-- Overview Section -->
       <section id="overview" class="content-section">
@@ -102,5 +114,6 @@
       </section>
     </main>
   </div>
+  <script src="medcontrol.js"></script>
 </body>
 </html>
