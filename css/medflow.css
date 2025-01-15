@@ -103,3 +103,113 @@ body {
     color: #666;
   }
   
+  /* Responsividade Geral */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .program-container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin: 5px 10px;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .table-container table {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  form label,
+  form input,
+  form textarea,
+  form select,
+  form button {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .chart img {
+    width: 100%;
+    height: auto;
+  }
+
+  .logout-button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  main h2 {
+    font-size: 1rem;
+  }
+
+  .cards {
+    gap: 5px;
+  }
+
+  .table-container table {
+    font-size: 0.8rem;
+  }
+
+  form label,
+  form input,
+  form textarea,
+  form select,
+  form button {
+    font-size: 0.8rem;
+  }
+
+  .logout-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
