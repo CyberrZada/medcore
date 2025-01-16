@@ -15,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
     height: 100%;
     width: 100%;
@@ -24,49 +23,58 @@ body {
   }
   
   .splash-content {
-    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento uniforme entre os elementos */
+    animation: fadeIn 1.5s ease-in-out;
   }
   
   .splash-logo {
     font-size: 2.5rem;
     margin: 0;
     color: #0074D9;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
   }
   
   .splash-message {
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 0;
     color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
   }
   
   .loading-spinner {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top-color: #0074D9;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #d7d8d8;
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite, fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.8s;
   }
   
   /* Animações */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
   @keyframes spin {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
   
